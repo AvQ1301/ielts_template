@@ -75,6 +75,37 @@ The template includes three sample cards:
 2. Grammar card
 3. Reading comprehension card
 
+## Uploading to GitHub
+
+### Option 1: Using the provided script
+
+1. Create a new repository on GitHub:
+   - Go to https://github.com/new
+   - Repository name: `ielts_template` (or your preferred name)
+   - Choose Public or Private
+   - **DO NOT** initialize with README, .gitignore, or license
+   - Click "Create repository"
+
+2. Run the push script:
+   ```bash
+   ./push-to-github.sh
+   ```
+
+3. Follow the prompts to enter your GitHub username and repository name
+
+### Option 2: Manual push
+
+1. Create a new repository on GitHub (same steps as above)
+
+2. Add remote and push:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/ielts_template.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+Replace `YOUR_USERNAME` with your actual GitHub username.
+
 ## License
 
 Feel free to use and modify this template for your personal use.
