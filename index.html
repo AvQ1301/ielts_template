@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anki Deck Template - Browser Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Anki Deck Template - Browser Test</h1>
+            <p>Test your Anki card template before importing to Anki</p>
+        </header>
+
+        <div class="test-controls">
+            <button id="flipBtn" class="btn btn-primary">Flip Card</button>
+            <button id="nextBtn" class="btn btn-secondary">Next Card</button>
+            <button id="prevBtn" class="btn btn-secondary">Previous Card</button>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="ankiCard">
+                <!-- Front side -->
+                <div class="card-front" id="cardFront">
+                    <div class="card-content">
+                        <h2 class="card-title">Front Side</h2>
+                        <div class="card-field">
+                            <div class="field-label">Question:</div>
+                            <div class="field-content">{{Question}}</div>
+                        </div>
+                        <div class="card-field">
+                            <div class="field-label">Example:</div>
+                            <div class="field-content">{{Example}}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back" id="cardBack" style="display: none;">
+                    <div class="card-content">
+                        <h2 class="card-title">Back Side</h2>
+                        <div class="card-field">
+                            <div class="field-label">Answer:</div>
+                            <div class="field-content">{{Answer}}</div>
+                        </div>
+                        <div class="card-field">
+                            <div class="field-label">Explanation:</div>
+                            <div class="field-content">{{Explanation}}</div>
+                        </div>
+                        <div class="card-field">
+                            <div class="field-label">Notes:</div>
+                            <div class="field-content">{{Notes}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sample-data">
+            <h3>Sample Data</h3>
+            <div class="data-controls">
+                <select id="sampleSelect">
+                    <option value="0">Sample 1: Vocabulary</option>
+                    <option value="1">Sample 2: Grammar</option>
+                    <option value="2">Sample 3: Reading</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
